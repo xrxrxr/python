@@ -5,12 +5,11 @@ print("Hello, on calcule la tva")
 n  = int(input("entre le prix hors taxes:"))
 quant  = int(input("entre une quantité:"))
 
-#if n == "0":
-#        print (" erreur entre une valeur superieur a 0")
-#if quant == "0":
-#    print (" erreur entre une valeur superieur a 0")
-#    quit()
-# else:
+if n == 0:
+    print (" erreur entre une valeur superieur a 0")+quit()
+if quant == 0:
+        print (" erreur entre une valeur superieur a 0")+quit()
+
 
 print ("prix sans tva" , (n)*(quant))
 tva = (n*quant)*1.2
