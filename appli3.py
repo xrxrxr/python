@@ -7,15 +7,15 @@ print("Hello, bienvenu dans notre boutique")
 
 
 produits = {
-    1:{"id": "1", "nom": "Poire", "prix": "4", "Quantité": "", "prixHT": ""},
-    2:{"id": "2", "nom": "Poire", "prix": "2", "Quantité": "", "prixHT": ""},
-    3:{"id": "3", "nom": "Poire", "prix": "1.5", "Quantité": "", "prixHT": ""},
-    4:{"id": "4", "nom": "Poire", "prix": "3", "Quantité": "", "prixHT": ""},
+    1:{"id": "1", "nom": "banane", "prix": "4", "quantité": "", "prixHT": ""},
+    2:{"id": "2", "nom": "pommme", "prix": "2", "quantité": "", "prixHT": ""},
+    3:{"id": "3", "nom": "orange", "prix": "1.5", "quantité": "", "prixHT": ""},
+    4:{"id": "4", "nom": "poire", "prix": "3", "quantité": "", "prixHT": ""},
 }
 
 
 
-for item in list:
-    print(":",item[0]," "*(9-len(item[0])),":",
-    item[1]," "*(13-len(item[1])),":",
-    item[2]," "*(4-len(str(item[2])),":")
+for item in produits:
+
+    print (produits(item, headers=["banane", "pommme", "orange", "poire"]))
+     #print(format('id', str,'nom','poire', str , "quantité" , "prixHT" , str),
