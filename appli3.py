@@ -26,3 +26,11 @@ n2  = int(input("combien de pommes tu veux? "))
 n3  = int(input("combien de oranges tu veux? "))
 n4  = int(input("combien de Poires tu veux? "))
 print("et de scoubidou bidou")
+
+total = (n1*4)+(n2*2)+(n3*1.5)+(n4*3)
+
+tva = (total)*1.2
+
+
+print ("ça fera hors taxes ", total)
+print ("et avec la tva " ,tva)
