@@ -29,8 +29,8 @@ print("et de scoubidou bidou")
 
 total = (n1*4)+(n2*2)+(n3*1.5)+(n4*3)
 
-tva = (total)*1.2
+tva = (total)+((total)*20)/100
 
 
-print ("ça fera hors taxes ", total)
-print ("et avec la tva " ,tva)
+print ("ça fera hors taxes ", total ," €")
+print ("et avec la tva " ,tva , " €")
