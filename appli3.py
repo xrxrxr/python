@@ -36,11 +36,12 @@ total = (n1*4)+(n2*2)+(n3*1.5)+(n4*3)
 
 tva = (total)+((total)*20)/100
 
-table2 = PrettyTable(["id",'nom','prix','quantité'])
+table2 = PrettyTable(['nom','prix','quantité'])
 
-for (key,value) in produits.items():
-    table2.add_row([key, value['nom'], value['prix'],])
-    table3.add_row(n1,n2,n3,n4)
-print (table2,table3)
+table2.add_row([produits[1]['nom'], produits[1]['prix'], n1])
+table2.add_row([produits[2]['nom'], produits[2]['prix'], n2])
+table2.add_row([produits[3]['nom'], produits[3]['prix'], n3])
+table2.add_row([produits[4]['nom'], produits[4]['prix'], n4])
+print (table2)
 print ("ça fera hors taxes ", total ," €")
 print ("et avec la tva " ,tva , " €")
