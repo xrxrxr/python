@@ -14,13 +14,10 @@ produits = {
             4: {'nom':'Poire', 'prix': 3,'quantité':0}
           }
 
-
-
-
-table = PrettyTable(["id",'nom','prix'])
+table = PrettyTable(["id",'nom','prix','quantité'])
 
 for (key,value) in produits.items():
-    table.add_row([key, value['nom'], value['prix'],])
+    table.add_row([key, value['nom'], value['prix'], value['quantité']])
 
 print (table)
 
@@ -30,17 +27,10 @@ n3  = int(input("combien de oranges tu veux? "))
 n4  = int(input("combien de Poires tu veux? "))
 print("et de scoubidou bidou")
 
-
-
 total = (n1*4)+(n2*2)+(n3*1.5)+(n4*3)
 
 tva = (total)+((total)*20)/100
 
-table2 = PrettyTable(["id",'nom','prix','quantité'])
 
-for (key,value) in produits.items():
-    table2.add_row([key, value['nom'], value['prix'],])
-    table3.add_row(n1,n2,n3,n4)
-print (table2,table3)
 print ("ça fera hors taxes ", total ," €")
 print ("et avec la tva " ,tva , " €")
